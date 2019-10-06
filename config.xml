@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.something.escaber" version="0.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="io.ionic.starter" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Escola Aberta</name>
-    <description>Aplicativo da escola aberta </description>
-    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <description>Aplicativo criado para a Escola Aberta 2019.</description>
+    <author email="tsuiya.hachiman@gmail.com" href="http://github.com/Tsuiya">Etim 3º Info</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -100,5 +100,5 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashShowOnlyFirstTime" value="true" />
 </widget>

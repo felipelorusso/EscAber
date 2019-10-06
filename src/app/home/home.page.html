@@ -10,24 +10,29 @@
 </ion-header>
 
 <ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Puxe para atualizar"
+          refreshingSpinner="circles"
+          refreshingText="Atualizando...">
+        </ion-refresher-content>
+      </ion-refresher>
     <ion-card class="welcome-card">
       <img src="/assets/Logo.gif" alt="" />
       <ion-card-header>
         <ion-card-subtitle></ion-card-subtitle>
-        <ion-card-title>Bem vindo à Etec</ion-card-title>
+        <ion-card-title class="titulo">Bem vindo à Etec</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>A Etec de Ibitinga está honrada por receber você neste evento, este é um aplicativo feito por alunos do 3º Etim Informática.</p>
+        <p class="titulo">A Etec de Ibitinga está honrada por 
+          receber você neste evento, este é um aplicativo feito 
+          por alunos do curso de informática.</p>
       </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Vamos lá</ion-label>
-      </ion-list-header>
-      <ion-item href="/sobre">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Sobre</ion-label>
-      </ion-item>
-      
-    </ion-list>
+    
+  <ion-item href="/sobre">
+      <ion-icon slot="start" color="medium" name="information-circle"></ion-icon>
+     <ion-label>Sobre</ion-label>
+   </ion-item>
 </ion-content>
